@@ -12,11 +12,10 @@ public class Main {
     static int number;
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-    public static void main(String[] args) throws IOException, NumberFormatException {
+    public static void main(String[] args) throws IOException, NumberFormatException{
         request();
         rhombusDrawer(number);
         System.out.println("\nGood job! Wish you great rhombuses!!!");
-        br.close();
     }
 
     public static void request () throws IOException, NumberFormatException{
@@ -30,6 +29,7 @@ public class Main {
                     " It can be ODD number only. Try again:");
             number = Integer.parseInt(br.readLine());
         }
+        br.close();
     }
 
     public static void rhombusDrawer(int size){
