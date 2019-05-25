@@ -45,15 +45,17 @@ public class Main {
     }
 
     public static void stringPrinter(int x, int y){
-        for (int p = y; p > 0; p--) {
-            System.out.print(space);
-        }
+        yPartOfStringWriter(y);
         for (int s = x; s > 0 ; s--) {
             System.out.print(star);
         }
+        yPartOfStringWriter(y);
+        System.out.println();
+    }
+
+    public static void yPartOfStringWriter(int y){
         for (int p = y; p > 0; p--) {
             System.out.print(space);
         }
-        System.out.println();
     }
 }
