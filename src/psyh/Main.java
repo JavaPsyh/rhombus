@@ -13,6 +13,13 @@ public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException, NumberFormatException {
+        request();
+        rhombusDrawer(number);
+        System.out.println("\nGood job! Wish you great rhombuses!!!");
+        br.close();
+    }
+
+    public static void request () throws IOException, NumberFormatException{
         System.out.println("Welcome, Rhombushunter! Here you can find your best rhombus. \n" +
                 "For true rhombusmaking we need, as you know, not even side of rhombus area. \n" +
                 "So, input any odd number, please:");
@@ -23,9 +30,6 @@ public class Main {
                     " It can be ODD number only. Try again:");
             number = Integer.parseInt(br.readLine());
         }
-        rhombusDrawer(number);
-        System.out.println("\nGood job! Wish you great rhombuses!!!");
-        br.close();
     }
 
     public static void rhombusDrawer(int size){
