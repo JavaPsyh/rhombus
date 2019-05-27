@@ -6,19 +6,20 @@ import java.io.InputStreamReader;
 
 public class Main {
 
-//    static int temp;
+//    static String ;
     static String star = "*";
     static String space = " ";
     static int number;
-    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException, NumberFormatException{
         request();
+        nextMeasurement();
         rhombusDrawer(number);
         System.out.println("\nGood job! Wish you great rhombuses!!!");
     }
 
     public static void request () throws IOException, NumberFormatException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Welcome, Rhombushunter! Here you can find your best rhombus. \n" +
                 "For true rhombusmaking we need, as you know, not even side of rhombus area. \n" +
                 "So, input any odd number, please:");
@@ -55,6 +56,11 @@ public class Main {
         }
         yPartOfStringWriter(y);
         System.out.println();
+    }
+
+    public static String nextMeasurement(){
+        return "Trust me! This String had made here specially for you.";
+        //Level up programming. You are the 3 billion first device, that rules by java (;
     }
 
     public static void yPartOfStringWriter(int y){
